@@ -1,0 +1,79 @@
+
+body {
+	font-family: "Crimson Text", "Times New Roman", serif;
+	background-color: #ddd;
+    font-size: 120%;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+h1, h2 {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+	text-align: center;
+	background-color: #851944;
+	color: #FFF;
+}
+
+p {
+	text-align: justify;
+}
+.content{
+    width: 100%;
+    height: auto;
+}
+.row {
+    width: 100%;
+}
+.row .col{
+    display: inline-block;
+    margin: 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    height: auto;
+}
+/* define a quebra de pagina no dentro do col*/
+.row .col p {
+    word-wrap: break-word;
+    color: #5454;
+    font-weight: 700;
+    height: auto;
+    margin-left: 10px;
+}
+/* vai definir a posição da imagem*/
+.row .col img{
+    width: 200px;
+    height: 50%;
+}
+@media only screen and (max-width :320px){
+    .row .col{
+        width: auto;
+        display: block;
+    }
+    .row .col img{
+        width: auto;
+    }
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width :412px){
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row .col{
+        width: auto;
+        display: block;
+    }
+    .row .col img{
+        width: auto;
+    }
+    .row .col p{
+
+    }
+}
